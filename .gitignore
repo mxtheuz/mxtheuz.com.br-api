@@ -1,5 +1,5 @@
-bin/
-obj/
+MxtheuzSkillsAPI/bin/
+MxtheuzSkillsAPI/obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
