@@ -19,7 +19,7 @@ public class GistRequest : IGistRequest
                 {
                     requestMessage.Headers.Authorization =
                         new AuthenticationHeaderValue("Bearer", GITHUB_TOKEN);
-                    httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("AppName", "1.0"));
+                    httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("AppName", "1.0")); // useful
     
                     HttpResponseMessage message = await httpClient.SendAsync(requestMessage);
                     var res = await message.Content.ReadAsStringAsync();
