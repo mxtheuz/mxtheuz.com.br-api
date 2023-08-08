@@ -11,7 +11,7 @@ public class APIController : Controller
     [HttpGet("skills")]
     public async Task<dynamic> Skills([FromServices] IGistRequest gistRequest)
     {
-        Root response = await gistRequest.GetGist("30b00d5caf04860dd1372343547c0260");
+        Root response = await gistRequest.GetGist("gist_id");
         return response.files.skillsjson.content;
     }
     
