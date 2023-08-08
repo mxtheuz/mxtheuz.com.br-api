@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-
 public class ChangeStatus
 {
     public int total { get; set; }
